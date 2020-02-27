@@ -1,0 +1,51 @@
+:root {
+ --black: #181C25;
+ --black-lighter: rgb(46, 52, 66);
+ --black-darker: rgb(17, 19, 26);
+ --orange: orange;
+ --green: rgb(54, 138, 54);
+ --yellow: yellow;
+ --blue: aqua;
+ --purple: rebeccapurple;
+ --white: white;
+}
+
+body {
+ font-family: 'Helvetica', 'Arial', sans-serif;
+ width: 80vw;
+ margin: 0 auto;
+ min-height: 100vh;
+ background: var(--black);
+ color: var(--white);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 1rem;
+ line-height: 1.4rem;
+}
+
+.content {
+ max-width: 80%;
+}
+
+input, textarea {
+ background: var(--black-lighter);
+ border: none;
+ border-radius: 5px;
+ padding: 5px;
+ font-size: 1rem;
+ color: var(--white);
+ margin: 0.3rem 0;
+ min-width: 11rem;
+}
+
+textarea {
+ width: 18.1rem;
+}
+
+label {
+ display: inline-block;
+ min-width: 6.5rem;
+ margin: 0.3rem;
+}

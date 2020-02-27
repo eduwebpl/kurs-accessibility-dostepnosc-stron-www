@@ -1,0 +1,3 @@
+- forgetting what is input
+- native ability to focus input element with clicking on text
+- super handy when developing custom UI elements
