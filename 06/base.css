@@ -1,0 +1,42 @@
+:root {
+ --black: #181C25;
+ --black-lighter: rgb(46, 52, 66);
+ --black-darker: rgb(17, 19, 26);
+ --orange: orange;
+ --green: rgb(54, 138, 54);
+ --yellow: yellow;
+ --blue: aqua;
+ --purple: rebeccapurple;
+ --white: white;
+}
+
+body {
+ font-family: 'Helvetica', 'Arial', sans-serif;
+ width: 80vw;
+ margin: 0 auto;
+ min-height: 100vh;
+ background: var(--black);
+ color: var(--white);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ font-size: 1rem;
+ line-height: 1.4rem;
+}
+  
+blockquote {
+ margin: 0;
+ margin-left: 1rem;
+ padding-left: 1rem;
+ border-left: 0.5rem solid var(--orange);
+}
+
+a {
+ background: var(--orange);
+ color: var(--black-darker);
+ width: 10rem;
+ text-align: center;
+ padding: 0.5rem;
+ text-decoration: none;
+ margin: 0 auto;
+}
