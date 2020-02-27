@@ -14,27 +14,36 @@
  <nav>
   <a class="cta" href="/">
    <img src="img/home-solid.svg">
+   Homepage
   </a>
     
   <button class="cta js-reload">
    <img src="img/sync-alt-solid.svg">
+   Reload
   </button>
   
   <button class="cta js-invert">
    <img src="img/moon-solid.svg">
+   Dark mode
   </button>
   
   <a class="cta" href="tel:123456789">
    <img src="img/phone-solid.svg">
+   Call us
   </a>  
  </nav>
 
  <style>
-  /* ... */
+  .inverted {
+   filter: invert(1);
+   background: var(--white);
+  }
  </style>
 
  <script>
-  /* ... */
+  document.querySelector('.js-invert').addEventListener('click', (ev) => {
+   document.body.classList.toggle('inverted');
+  });
  </script>
 
 </body>
