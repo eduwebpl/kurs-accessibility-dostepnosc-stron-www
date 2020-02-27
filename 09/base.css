@@ -1,0 +1,76 @@
+:root {
+ --black: #181C25;
+ --black-lighter: rgb(46, 52, 66);
+ --black-darker: rgb(17, 19, 26);
+ --orange: orange;
+ --green: rgb(54, 138, 54);
+ --yellow: yellow;
+ --blue: aqua;
+ --purple: rebeccapurple;
+ --white: white;
+}
+
+body {
+ font-family: 'Helvetica', 'Arial', sans-serif;
+ width: 90vw;
+ margin: 0 auto;
+ min-height: 100vh;
+ background: var(--black);
+ color: var(--white);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 1rem;
+ line-height: 1.4rem;
+ max-width:
+}
+
+
+.gallery img {
+ max-height: 10rem;
+}
+
+.gallery {
+ display: flex;
+ justify-content: center;
+ align-items: stretch;
+ background: var(--white);
+ border-radius: 10px;
+ padding: 0;
+ margin: 0;
+ margin-bottom: 20px;
+ width: 80%;
+ flex-wrap: wrap;
+}
+
+.gallery li {
+ max-width: 12rem;
+ margin: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+
+a {
+ color: var(--green);
+}
+
+.cta {
+ background: var(--green);
+ font-weight: bold;
+ padding: 0.5rem;
+ text-align: center;
+ cursor: pointer;
+ color: var(--white);
+ width: 100%;
+}
+
+.gallery img {
+ max-width: 100%;
+}
+
+ul {
+ list-style-type: none;
+}

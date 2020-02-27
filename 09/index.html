@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Accessibility</title>
+ <link href="base.css" rel="stylesheet">
+</head>
+
+<body>
+ 
+ <h1> Backpack of your dreams!</h1>
+ 
+ <ul class="gallery">
+  <li>
+    <img src="img/dakine.jpg" alt="">
+    <div class="cta" data-goto="#buy-dakine">
+     Buy Dakine Duel 26L Carbon
+    </div>
+  </li>
+  <li>
+    <img src="img/fjallraven.jpg" alt="">
+    
+    <div class="cta" data-goto="#buy-fjallraven">
+     Buy Fjallraven Kanken Mini Plum
+    </div>
+  </li>
+  <li>
+    <img src="img/peak.jpg" alt="">
+    <div class="cta" data-goto="#buy-peak-design">
+     Buy Peak Design Everyday Backpack 30L
+    </div>
+  </li>
+ </ul>
+ 
+ 
+ <p>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque dolorum animi culpa, temporibus tenetur harum provident. Perferendis totam cumque odit deleniti adipisci at, error hic atque esse voluptates, similique ipsum?
+ </p>
+ 
+ <p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quo eveniet harum laboriosam velit? Neque, impedit libero! Alias atque accusamus pariatur eveniet corporis veritatis. Itaque perferendis placeat distinctio eveniet sequi.
+ </p>
+ 
+ <a href="https://google.com">Browse more</a>
+ <style>
+  /* ... */
+  </style>
+
+ <script>
+  document.querySelectorAll('.cta').forEach((el) => {
+   el.addEventListener('click', (ev) => {
+    const url = ev.target.dataset.goto;
+    location.href = url;
+   });
+  });
+ </script>
+
+</body>
+
+</html>
