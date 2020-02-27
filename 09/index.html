@@ -16,22 +16,22 @@
  <ul class="gallery">
   <li>
     <img src="img/dakine.jpg" alt="">
-    <div class="cta" data-goto="#buy-dakine">
+    <a class="cta" href="#buy-dakine">
      Buy Dakine Duel 26L Carbon
-    </div>
+    </a>
   </li>
   <li>
     <img src="img/fjallraven.jpg" alt="">
     
-    <div class="cta" data-goto="#buy-fjallraven">
+    <a class="cta" href="#buy-fjallraven">
      Buy Fjallraven Kanken Mini Plum
-    </div>
+    </a>
   </li>
   <li>
     <img src="img/peak.jpg" alt="">
-    <div class="cta" data-goto="#buy-peak-design">
+    <a class="cta" href="#buy-peak-design">
      Buy Peak Design Everyday Backpack 30L
-    </div>
+    </a>
   </li>
  </ul>
  
@@ -44,18 +44,22 @@
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quo eveniet harum laboriosam velit? Neque, impedit libero! Alias atque accusamus pariatur eveniet corporis veritatis. Itaque perferendis placeat distinctio eveniet sequi.
  </p>
  
- <a href="https://google.com">Browse more</a>
- <style>
-  /* ... */
+  <a href="https://google.com">Browse more</a>
+  
+  <style>
+   .cta {
+    text-decoration: none;
+    display: block;
+   }
   </style>
 
  <script>
-  document.querySelectorAll('.cta').forEach((el) => {
-   el.addEventListener('click', (ev) => {
-    const url = ev.target.dataset.goto;
-    location.href = url;
-   });
-  });
+  // document.querySelectorAll('.cta').forEach((el) => {
+  //  el.addEventListener('click', (ev) => {
+  //   const url = ev.target.dataset.goto;
+  //   location.href = url;
+  //  });
+  // });
  </script>
 
 </body>
