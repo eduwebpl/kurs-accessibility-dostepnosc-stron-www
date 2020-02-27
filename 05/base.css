@@ -1,0 +1,48 @@
+:root {
+ --black: #181C25;
+ --black-lighter: rgb(46, 52, 66);
+ --black-darker: rgb(17, 19, 26);
+ --orange: orange;
+ --green: rgb(54, 138, 54);
+ --yellow: yellow;
+ --blue: #00ffff;
+ --purple: rebeccapurple;
+ --white: white;
+}
+
+body {
+ font-family: 'Helvetica', 'Arial', sans-serif;
+ width: 80vw;
+ margin: 0 auto;
+ min-height: 100vh;
+ background: var(--black);
+ color: var(--white);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 1rem;
+ line-height: 1.4rem;
+}
+
+img {
+ max-width: 90%;
+ margin-bottom: 0.5rem;
+}
+a {
+ color: var(--blue);
+}
+
+.cta {
+ background: var(--blue);
+ padding: 1rem;
+ font-size: 1rem;
+ text-decoration: none;
+ color: var(--black-darker);
+ font-weight: bold;
+ display: block;
+ max-width: 50%;
+ margin: 0 auto;
+ margin-top: 20px;
+ text-align: center;
+}
