@@ -21,12 +21,13 @@ body {
  flex-direction: column;
  justify-content: center;
  align-items: center;
- line-height: 22px;
+ font-size: 1rem;
+ line-height: 1.4rem;
 }
 
 img {
  max-width: 50%;
- margin: 16px;
+ margin: 1rem;
 }
 
 div {
