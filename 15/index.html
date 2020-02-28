@@ -13,6 +13,10 @@
 
  <img src="img/a11y-logo.png" alt="" class="logo">
 
+ <a href="#main-content" class="skip-link">
+  Skip to main content
+ </a>
+ 
  <h1>Screen Reader User Survey #8 Results</h1>
  
  <p>
@@ -22,6 +26,12 @@
  
  <main id="main-content">
   <h2>Demographics</h2>
+  
+  <div id="respondent-table-before"></div>
+  
+  <a href="#respondent-table-after" class="skip-link">
+   Jump after "Respondent Region" table
+  </a>
   
   <table>
    <caption>Respondent Region</caption>
@@ -68,6 +78,11 @@
     </tr>
    </tbody>
   </table>
+  
+  <a href="#respondent-table-before" class="skip-link">
+   Jump before "Respondent Region" table
+  </a>
+  <div id="respondent-table-after"></div>
   
   <p>This survey had more respondents outside North America than previous surveys, thus providing better representation
    of the global screen reader user audience.</p>
@@ -159,7 +174,14 @@
  </main>
 
  <style>
-  /* ... */
+  .skip-link:not(:focus) {
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+   clip: rect(1px 1px 1px 1px);
+   white-space: nowrap;
+  }
  </style>
 
  <script>
