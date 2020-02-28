@@ -104,8 +104,14 @@
  </textarea>
  
  <style>
+  
+  input:focus {
+   outline: none;
+  }
+  
   li {
    position: relative;
+   overflow: hidden;
   }
  
   input:focus + label::before {
@@ -116,7 +122,13 @@
    position: absolute;
    left: 0;
    top: 0;
-   outline: 4px solid var(--blue);
+   box-sizing: border-box;
+   border-top: 4px solid var(--focus-color);
+   border: 4px solid var(--focus-color);
+  }
+  
+  input:focus + label {
+   color: var(--focus-color);
   }
   
  </style>

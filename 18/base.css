@@ -8,6 +8,8 @@
  --blue: aqua;
  --purple: rebeccapurple;
  --white: white;
+ 
+ --focus-color: var(--blue);
 }
 
 body {
