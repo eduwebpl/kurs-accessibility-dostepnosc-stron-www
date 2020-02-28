@@ -122,7 +122,21 @@
    left: 0;
    top: 0;
    box-sizing: border-box;
+   border-radius: 25px;
+   overflow: hidden;
+   box-shadow: 0 0 0 0.2rem var(--color);
   }
+  
+  input:focus + label {
+   --color: var(--blue);
+   color: var(--color);
+  }
+  
+  input:checked + label {
+   --color: var(--green);
+  }
+  
+  
  </style>
 
  <script>
