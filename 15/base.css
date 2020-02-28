@@ -1,0 +1,60 @@
+:root {
+ --black: #181C25;
+ --black-lighter: rgb(46, 52, 66);
+ --black-darker: rgb(17, 19, 26);
+ --orange: orange;
+ --green: rgb(54, 138, 54);
+ --yellow: yellow;
+ --blue: aqua;
+ --purple: rebeccapurple;
+ --white: white;
+}
+
+body {
+ font-family: 'Helvetica', 'Arial', sans-serif;
+ width: 80vw;
+ margin: 0 auto;
+ min-height: 100vh;
+ background: var(--black);
+ color: var(--white);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 1rem;
+ line-height: 1.4rem;
+}
+
+td, th {
+ border: 1px solid gray;
+ padding: 5px;
+}
+
+img {
+ max-width: 100%;
+}
+
+svg {
+ max-width: 100%;
+}
+
+body {
+ max-width: 70vw;
+}
+
+.logo {
+ max-width: 10rem;
+ margin: 1rem;
+}
+
+table {
+ margin: 0 auto;
+}
+
+a {
+ color: var(--blue);
+}
+
+h1 {
+ font-size: 1.5rem;
+}
