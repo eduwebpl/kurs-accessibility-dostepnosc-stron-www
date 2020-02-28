@@ -15,16 +15,18 @@
  
  <div>
   <label for="first-name">First name</label>
-  <input id="first-name" type="text" placeholder="First name"> 
+  <input id="first-name" type="text" placeholder="First name" tabindex="4"> 
  </div>
  <div>
   <label for="last-name">Last name</label>
   <input id="last-name" type="text" placeholder="Last name">
  </div>
+ 
  <div>
   <label for="email">Email address</label>
-  <input id="email" type="text" placeholder="Email address">
+  <input id="email" type="text" placeholder="Email address"  tabindex="1">
  </div>
+ 
  <div>
   <label for="password">Password</label>
   <input id="password" type="password" placeholder="Password">
@@ -39,7 +41,9 @@
  <textarea id="address" cols="30" rows="10" placeholder="Your address"></textarea> 
 
  <style>
-  /* ... */
+  body {
+   /* flex-direction: column-reverse; */
+  }
  </style>
 
  <script>
