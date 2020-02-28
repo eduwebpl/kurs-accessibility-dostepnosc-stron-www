@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Accessibility</title>
+ <link href="base.css" rel="stylesheet">
+</head>
+
+<body>
+ 
+ <span aria-hidden="true" class="decoration-emoji"> 🍕 😋</span>
+ <h1> Delicious pizzanator </h1>
+
+ <span aria-hidden="true" class="decoration-emoji"> 👨‍🍳 </span>
+ <h2>
+  Choose your dough
+ </h2>
+ 
+ <ul class="dough-picker">
+  <li>
+   <input id="dough-regular" type="radio" name="dough" value="regular">
+   <label for="dough-regular">
+    Regular
+   </label>
+  </li>
+  <li>
+   <input id="dough-italian" type="radio" name="dough" value="italian">
+   <label for="dough-italian">
+    Italian
+   </label>
+  </li>
+  <li>
+   <input id="dough-thick" type="radio" name="dough" value="thick">
+   <label for="dough-thick">
+    Thick
+   </label>
+  </li>
+ </ul>
+ 
+ <span aria-hidden="true" class="decoration-emoji small"> 🧀 🍅 🌱 </span>
+ <h2> Choose your toppings </h2>
+ 
+ <ul class="toppings-picker">
+  <li>
+   <input id="topping-mozzarella" type="checkbox" name="topping-mozzarella" value="mozzarella">
+   <label for="topping-mozzarella">
+    Mozzarella
+   </label>
+  </li>
+  <li>
+   <input id="topping-pepperoni" type="checkbox" name="topping-pepperoni" value="pepperoni">
+   <label for="topping-pepperoni">
+    Pepperoni
+   </label>
+  </li>
+  <li>
+   <input id="topping-mushrooms" type="checkbox" name="topping-mushrooms" value="mushrooms">
+   <label for="topping-mushrooms">
+    Mushrooms
+   </label>
+  </li>
+  <li>
+   <input id="topping-onions" type="checkbox" name="topping-onions" value="Onions">
+   <label for="topping-onions">
+    Onions
+   </label>
+  </li>
+  <li>
+   <input id="topping-black-olives" type="checkbox" name="topping-black-olives" value="black_olives">
+   <label for="topping-black-olives">
+    Black olives
+   </label>
+  </li>
+  <li>
+   <input id="topping-spinach" type="checkbox" name="topping-spinach" value="spinach">
+   <label for="topping-spinach">
+    Spinach
+   </label>
+  </li>
+  <li>
+   <input id="topping-pineapple" type="checkbox" name="topping-pineapple" value="pineapple">
+   <label for="topping-pineapple">
+    Pineapple
+   </label>
+  </li>
+  <li>
+   <input id="topping-bacon" type="checkbox" name="topping-bacon" value="bacon">
+   <label for="topping-bacon">
+    Bacon
+   </label>
+  </li>
+ </ul>
+ 
+ <span aria-hidden="true" class="decoration-emoji small"> 🤔 </span>
+ <h2><label for="additional-notes">Additional notes</label></h2>
+ <textarea 
+  id="additional-notes" 
+  placeholder="eg. I want an elephant drawn on the box!"
+  rows="10">
+ </textarea>
+ 
+ <style>
+  /* ... */
+ </style>
+
+ <script>
+  /* ... */
+ </script>
+
+</body>
+
+</html>
