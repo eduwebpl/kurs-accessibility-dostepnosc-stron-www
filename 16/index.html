@@ -103,7 +103,25 @@
  </textarea>
  
  <style>
-  /* ... */
+  li {
+   position: relative;
+  }
+  
+  input:focus {
+   outline: none;
+  }
+  
+  input:focus + label::before {
+   content: '';
+   display: inline-block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   outline: 3px solid var(--blue);
+  }
+  
  </style>
 
  <script>
