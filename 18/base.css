@@ -1,0 +1,82 @@
+:root {
+ --black: #181C25;
+ --black-lighter: rgb(46, 52, 66);
+ --black-darker: rgb(17, 19, 26);
+ --orange: orange;
+ --green: rgb(54, 138, 54);
+ --yellow: yellow;
+ --blue: aqua;
+ --purple: rebeccapurple;
+ --white: white;
+}
+
+body {
+ font-family: 'Helvetica', 'Arial', sans-serif;
+ width: 80vw;
+ margin: 0 auto;
+ min-height: 100vh;
+ background: var(--black);
+ color: var(--white);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 1rem;
+ line-height: 1.4rem;
+}
+
+img {
+ max-width: 100%;
+}
+
+ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ display: grid;
+}
+
+.dough-picker {
+ grid-template-columns: repeat(3, 1fr);
+}
+
+.toppings-picker {
+ grid-template-columns: repeat(4, 1fr);
+}
+
+ul li {
+ display: flex;
+ align-items: center;
+ padding: 0.5rem;
+}
+
+h1 {
+ margin-bottom: 3rem;
+}
+
+ul li input {
+ margin-right: 1rem;
+}
+
+.decoration-emoji {
+ font-size: 5rem;
+ line-height: 5rem;
+ margin-top: 2rem;
+}
+
+textarea {
+ background: var(--black-lighter);
+ border: none;
+ border-radius: 5px;
+ padding: 5px;
+ font-size: 1rem;
+ color: var(--white);
+ margin: 0.3rem 0;
+ max-width: 100%;
+ min-width: 20rem;
+}
+
+.decoration-emoji.small {
+ font-size: 3rem;
+ line-height: 3rem;
+}
