@@ -10,40 +10,52 @@
 </head>
 
 <body>
- 
+
  <div class="game">
   <img class="cover" src="img/detective.svg">
   <div class="cta">
    Secret
-  </div> 
+  </div>
  </div>
- 
+
  <h1> Saga continues </h1>
- 
+
  <p>
-  Last night something odd happened in the old city of code. Someone attempted a assasination on accessibility of their site!
+  Last night something odd happened in the old city of code. Someone attempted a assasination on accessibility of their
+  site!
  </p>
 
  <p>
   "Who could do such a thing?! 😱" - you might ask.
  </p>
- 
+
  <p>
   "Was that a gardener? 🤔"
  </p>
- 
+
  <p>
   In order to discover the mystery, you'll have to show your courage...
  </p>
 
+ <p class="hidden-secret visually-hidden">
+  It's someone who didn't understand the case!
+ </p>
+
  <style>
-  /* ... */
+  .visually-hidden {
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+   clip: rect(1px 1px 1px 1px);
+   white-space: nowrap;
+  }
  </style>
 
  <script>
   document.querySelector('.cta').addEventListener('click', () => {
-   alert("It's someone who didn't understand the case!")
-  })
+   alert(document.querySelector('.hidden-secret').innerText);
+  });
  </script>
 
 </body>
