@@ -105,6 +105,12 @@
  <style>
   li {
    position: relative;
+   overflow: hidden; 
+  }
+  
+  label {
+   --color: var(--white);
+   color: var(--white);
   }
   
   input:focus {
@@ -112,6 +118,7 @@
   }
   
   input:focus + label::before {
+   --color: var(--blue);
    content: '';
    display: inline-block;
    position: absolute;
@@ -119,8 +126,25 @@
    top: 0;
    width: 100%;
    height: 100%;
-   outline: 3px solid var(--blue);
+   background: var(--color);
+   z-index: -1;
   }
+  
+  input:checked + label {
+   --color: var(--green);
+   color: var(--color);
+  }
+  
+  input:focus + label {
+   --color: var(--black);
+   color: var(--color);
+  }
+  
+  input:checked + label::before {
+   --color: var(--green);
+  }
+   
+  
   
  </style>
 
